@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		843623E0215C29DD003A0958 /* SecondHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843623DF215C29DD003A0958 /* SecondHomeScreenViewController.swift */; };
+		84BB73D4215C25D5009A2FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73D3215C25D5009A2FDB /* AppDelegate.swift */; };
+		84BB73D6215C25D5009A2FDB /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */; };
+		84BB73D9215C25D5009A2FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB73D7215C25D5009A2FDB /* Main.storyboard */; };
+		84BB73DB215C25D6009A2FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BB73DA215C25D6009A2FDB /* Assets.xcassets */; };
+		84BB73DE215C25D6009A2FDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB73DC215C25D6009A2FDB /* LaunchScreen.storyboard */; };
+		98B497AF85F061261DCEA21C /* Pods_WeMoBelkin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8370F25DC7103FE368B6A05 /* Pods_WeMoBelkin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		843623DF215C29DD003A0958 /* SecondHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHomeScreenViewController.swift; sourceTree = "<group>"; };
+		84BB73D0215C25D5009A2FDB /* WeMoBelkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeMoBelkin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BB73D3215C25D5009A2FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		84BB73D8215C25D5009A2FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84BB73DA215C25D6009A2FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BB73DD215C25D6009A2FDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BB73DF215C25D6009A2FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A47882E2D7747C85F9561EBE /* Pods-WeMoBelkin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeMoBelkin.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeMoBelkin/Pods-WeMoBelkin.release.xcconfig"; sourceTree = "<group>"; };
+		BEE4666547707EF01D0BD4D2 /* Pods-WeMoBelkin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeMoBelkin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeMoBelkin/Pods-WeMoBelkin.debug.xcconfig"; sourceTree = "<group>"; };
+		F8370F25DC7103FE368B6A05 /* Pods_WeMoBelkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeMoBelkin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BB73CD215C25D5009A2FDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B497AF85F061261DCEA21C /* Pods_WeMoBelkin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D58B4B406487F831B1CEF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8370F25DC7103FE368B6A05 /* Pods_WeMoBelkin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		843623E1215C29E7003A0958 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */,
+				843623DF215C29DD003A0958 /* SecondHomeScreenViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84BB73C7215C25D5009A2FDB = {
+			isa = PBXGroup;
+			children = (
+				84BB73D2215C25D5009A2FDB /* WeMoBelkin */,
+				84BB73D1215C25D5009A2FDB /* Products */,
+				DBDB858831049C2B63649969 /* Pods */,
+				00D58B4B406487F831B1CEF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84BB73D1215C25D5009A2FDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BB73D0215C25D5009A2FDB /* WeMoBelkin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BB73D2215C25D5009A2FDB /* WeMoBelkin */ = {
+			isa = PBXGroup;
+			children = (
+				843623E1215C29E7003A0958 /* Controllers */,
+				84BB73D3215C25D5009A2FDB /* AppDelegate.swift */,
+				84BB73D7215C25D5009A2FDB /* Main.storyboard */,
+				84BB73DA215C25D6009A2FDB /* Assets.xcassets */,
+				84BB73DC215C25D6009A2FDB /* LaunchScreen.storyboard */,
+				84BB73DF215C25D6009A2FDB /* Info.plist */,
+			);
+			path = WeMoBelkin;
+			sourceTree = "<group>";
+		};
+		DBDB858831049C2B63649969 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEE4666547707EF01D0BD4D2 /* Pods-WeMoBelkin.debug.xcconfig */,
+				A47882E2D7747C85F9561EBE /* Pods-WeMoBelkin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BB73CF215C25D5009A2FDB /* WeMoBelkin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BB73E2215C25D6009A2FDB /* Build configuration list for PBXNativeTarget "WeMoBelkin" */;
+			buildPhases = (
+				236B078D35216ADFE862B96F /* [CP] Check Pods Manifest.lock */,
+				84BB73CC215C25D5009A2FDB /* Sources */,
+				84BB73CD215C25D5009A2FDB /* Frameworks */,
+				84BB73CE215C25D5009A2FDB /* Resources */,
+				8E8EA9C5FF38E28DB805CA26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeMoBelkin;
+			productName = WeMoBelkin;
+			productReference = 84BB73D0215C25D5009A2FDB /* WeMoBelkin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BB73C8215C25D5009A2FDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = MobileAppsCompany;
+				TargetAttributes = {
+					84BB73CF215C25D5009A2FDB = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 84BB73CB215C25D5009A2FDB /* Build configuration list for PBXProject "WeMoBelkin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84BB73C7215C25D5009A2FDB;
+			productRefGroup = 84BB73D1215C25D5009A2FDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BB73CF215C25D5009A2FDB /* WeMoBelkin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BB73CE215C25D5009A2FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BB73DE215C25D6009A2FDB /* LaunchScreen.storyboard in Resources */,
+				84BB73DB215C25D6009A2FDB /* Assets.xcassets in Resources */,
+				84BB73D9215C25D5009A2FDB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		236B078D35216ADFE862B96F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeMoBelkin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E8EA9C5FF38E28DB805CA26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeMoBelkin/Pods-WeMoBelkin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeMoBelkin/Pods-WeMoBelkin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BB73CC215C25D5009A2FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BB73D6215C25D5009A2FDB /* HomeScreenViewController.swift in Sources */,
+				84BB73D4215C25D5009A2FDB /* AppDelegate.swift in Sources */,
+				843623E0215C29DD003A0958 /* SecondHomeScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84BB73D7215C25D5009A2FDB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BB73D8215C25D5009A2FDB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84BB73DC215C25D6009A2FDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BB73DD215C25D6009A2FDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BB73E0215C25D6009A2FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84BB73E1215C25D6009A2FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BB73E3215C25D6009A2FDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEE4666547707EF01D0BD4D2 /* Pods-WeMoBelkin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DCN377FL7;
+				INFOPLIST_FILE = WeMoBelkin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MAC.WeMoBelkin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84BB73E4215C25D6009A2FDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47882E2D7747C85F9561EBE /* Pods-WeMoBelkin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2DCN377FL7;
+				INFOPLIST_FILE = WeMoBelkin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MAC.WeMoBelkin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BB73CB215C25D5009A2FDB /* Build configuration list for PBXProject "WeMoBelkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BB73E0215C25D6009A2FDB /* Debug */,
+				84BB73E1215C25D6009A2FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BB73E2215C25D6009A2FDB /* Build configuration list for PBXNativeTarget "WeMoBelkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BB73E3215C25D6009A2FDB /* Debug */,
+				84BB73E4215C25D6009A2FDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BB73C8215C25D5009A2FDB /* Project object */;
+}
