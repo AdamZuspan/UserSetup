@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,6 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="174" y="99"/>
         </scene>
         <!--Second Home Screen View Controller-->
         <scene sceneID="OKj-eL-11v">
@@ -42,16 +43,48 @@
                     <view key="view" contentMode="scaleToFill" id="ZTt-Ot-VWq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GyroImage" translatesAutoresizingMaskIntoConstraints="NO" id="Lyu-qN-ztn">
+                                <rect key="frame" x="0.0" y="20" width="375" height="520"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-vq-By6">
+                                <rect key="frame" x="0.0" y="536" width="375" height="79"/>
+                                <color key="backgroundColor" red="0.3803921569" green="0.79215686269999996" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Get Started   &gt;">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n94-ic-687">
+                                <rect key="frame" x="0.0" y="613" width="375" height="54"/>
+                                <state key="normal" title="Learn More About WeMo"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sXV-vq-By6" firstAttribute="top" secondItem="VmQ-j7-4TD" secondAttribute="top" constant="516" id="1xh-fa-rIO"/>
+                            <constraint firstItem="VmQ-j7-4TD" firstAttribute="trailing" secondItem="Lyu-qN-ztn" secondAttribute="trailing" id="BGh-76-Mop"/>
+                            <constraint firstItem="n94-ic-687" firstAttribute="top" secondItem="VmQ-j7-4TD" secondAttribute="top" constant="593" id="Hwh-OQ-j1R"/>
+                            <constraint firstItem="sXV-vq-By6" firstAttribute="leading" secondItem="VmQ-j7-4TD" secondAttribute="leading" id="Is1-dZ-FmS"/>
+                            <constraint firstItem="Lyu-qN-ztn" firstAttribute="top" secondItem="VmQ-j7-4TD" secondAttribute="top" id="LSS-3J-BTU"/>
+                            <constraint firstItem="VmQ-j7-4TD" firstAttribute="bottom" secondItem="Lyu-qN-ztn" secondAttribute="bottom" constant="127" id="Rhm-MT-9lw"/>
+                            <constraint firstItem="VmQ-j7-4TD" firstAttribute="bottom" secondItem="sXV-vq-By6" secondAttribute="bottom" constant="52" id="SDl-CI-Il6"/>
+                            <constraint firstItem="n94-ic-687" firstAttribute="leading" secondItem="VmQ-j7-4TD" secondAttribute="leading" id="ZLm-tr-nc4"/>
+                            <constraint firstItem="Lyu-qN-ztn" firstAttribute="leading" secondItem="VmQ-j7-4TD" secondAttribute="leading" id="aEg-rH-rIZ"/>
+                            <constraint firstItem="VmQ-j7-4TD" firstAttribute="bottom" secondItem="n94-ic-687" secondAttribute="bottom" id="g1w-3h-bSj"/>
+                            <constraint firstItem="VmQ-j7-4TD" firstAttribute="trailing" secondItem="n94-ic-687" secondAttribute="trailing" id="mwu-Qf-m5n"/>
+                            <constraint firstItem="VmQ-j7-4TD" firstAttribute="trailing" secondItem="sXV-vq-By6" secondAttribute="trailing" id="nvt-zN-pqO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VmQ-j7-4TD"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbc-3H-x4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98" y="32"/>
+            <point key="canvasLocation" x="861.60000000000002" y="98.50074962518741"/>
         </scene>
     </scenes>
     <resources>
+        <image name="GyroImage" width="177" height="246"/>
         <image name="WelcomeScreen" width="320" height="568"/>
     </resources>
 </document>
