@@ -15,5 +15,7 @@ class ProductTableViewController: UIViewController {
     }
     
     
+    @IBAction func XButtonACT(_ sender: Any) {
+    }
     
 }
