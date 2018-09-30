@@ -56,7 +56,7 @@
                                 </state>
                                 <connections>
                                     <action selector="GetStartedButtonACT:" destination="5fP-8C-Q5S" eventType="touchUpInside" id="feJ-kO-B2b"/>
-                                    <segue destination="ahI-b2-lAr" kind="show" id="40t-HX-fMB"/>
+                                    <segue destination="ahI-b2-lAr" kind="presentation" modalTransitionStyle="flipHorizontal" id="40t-HX-fMB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n94-ic-687">
@@ -133,6 +133,7 @@
                                 </state>
                                 <connections>
                                     <action selector="XButtonACT:" destination="ahI-b2-lAr" eventType="touchUpInside" id="19d-45-bC4"/>
+                                    <segue destination="5fP-8C-Q5S" kind="presentation" modalTransitionStyle="partialCurl" id="8kN-mH-msc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -166,4 +167,7 @@
         <image name="GyroImage" width="354" height="492"/>
         <image name="WelcomeScreen" width="640" height="1136"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8kN-mH-msc"/>
+    </inferredMetricsTieBreakers>
 </document>
