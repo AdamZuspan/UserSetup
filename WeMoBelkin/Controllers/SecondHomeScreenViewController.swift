@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class SecondHomeScreenViewController: UIViewController {
 
@@ -16,7 +17,14 @@ class SecondHomeScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
-
+    @IBAction func GetStartedButtonACT(_ sender: Any) {
+        
+    }
+    
+    @IBAction func LearnMoreButtonACT(_ sender: Any) {
+        let safariVC = SFSafariViewController(url: URL(string: "https://www.belkin.com/us/c/smarthome-iot")!)
+        self.present(safariVC, animated: true, completion: nil)
+    }
+    
 
 }

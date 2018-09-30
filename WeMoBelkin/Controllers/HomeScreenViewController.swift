@@ -11,10 +11,11 @@ import SVProgressHUD
 
 class HomeScreenViewController: UIViewController {
     var delayTime = 2.0
+    var mySpinningLoader = SpinningLoaderViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupLoadingProperties()
+        mySpinningLoader.setupLoadingProperties()
         SVProgressHUD.show()
         SVProgressHUD.dismiss(withDelay: delayTime) {
             let secondHomeVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondHomeScreen") as! SecondHomeScreenViewController
@@ -22,13 +23,6 @@ class HomeScreenViewController: UIViewController {
         }
     }
     
-    func setupLoadingProperties() {
-        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle.custom)
-        SVProgressHUD.setForegroundColor(.yellow)
-        SVProgressHUD.setRingRadius(16.0)
-        SVProgressHUD.setRingThickness(8.0)
-        SVProgressHUD.setCornerRadius(80.0)
-        SVProgressHUD.setBackgroundColor(.clear)
-    }
+    
 }
 

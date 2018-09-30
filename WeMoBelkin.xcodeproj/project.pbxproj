@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842CC0D521614806008141F9 /* SpinningLoaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CC0D421614806008141F9 /* SpinningLoaderViewModel.swift */; };
+		842CC0D721617B89008141F9 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CC0D621617B89008141F9 /* ProductTableViewController.swift */; };
 		843623E0215C29DD003A0958 /* SecondHomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843623DF215C29DD003A0958 /* SecondHomeScreenViewController.swift */; };
 		84BB73D4215C25D5009A2FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73D3215C25D5009A2FDB /* AppDelegate.swift */; };
 		84BB73D6215C25D5009A2FDB /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		842CC0D421614806008141F9 /* SpinningLoaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningLoaderViewModel.swift; sourceTree = "<group>"; };
+		842CC0D621617B89008141F9 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		843623DF215C29DD003A0958 /* SecondHomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHomeScreenViewController.swift; sourceTree = "<group>"; };
 		84BB73D0215C25D5009A2FDB /* WeMoBelkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeMoBelkin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB73D3215C25D5009A2FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,11 +54,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		842CC0D3216147E0008141F9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				842CC0D421614806008141F9 /* SpinningLoaderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		843623E1215C29E7003A0958 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */,
 				843623DF215C29DD003A0958 /* SecondHomeScreenViewController.swift */,
+				842CC0D621617B89008141F9 /* ProductTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -80,6 +93,7 @@
 		84BB73D2215C25D5009A2FDB /* WeMoBelkin */ = {
 			isa = PBXGroup;
 			children = (
+				842CC0D3216147E0008141F9 /* ViewModels */,
 				843623E1215C29E7003A0958 /* Controllers */,
 				84BB73D3215C25D5009A2FDB /* AppDelegate.swift */,
 				84BB73D7215C25D5009A2FDB /* Main.storyboard */,
@@ -212,9 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842CC0D521614806008141F9 /* SpinningLoaderViewModel.swift in Sources */,
 				84BB73D6215C25D5009A2FDB /* HomeScreenViewController.swift in Sources */,
 				84BB73D4215C25D5009A2FDB /* AppDelegate.swift in Sources */,
 				843623E0215C29DD003A0958 /* SecondHomeScreenViewController.swift in Sources */,
+				842CC0D721617B89008141F9 /* ProductTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
