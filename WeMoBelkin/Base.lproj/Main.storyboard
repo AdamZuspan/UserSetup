@@ -97,27 +97,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zt4-lq-8t7">
-                                <rect key="frame" x="0.0" y="180" width="375" height="487"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="zIZ-D7-5X9">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zIZ-D7-5X9" id="gNf-va-JbQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Product Are You Setting Up Today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I0-dE-34O">
-                                <rect key="frame" x="0.0" y="60" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="149"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zt4-lq-8t7">
+                                <rect key="frame" x="0.0" y="180" width="375" height="487"/>
+                                <color key="backgroundColor" red="0.22694376111030579" green="0.23147431015968323" blue="0.24759310483932495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="138" id="zIZ-D7-5X9" customClass="ProductTableViewCell" customModule="WeMoBelkin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="138"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zIZ-D7-5X9" id="gNf-va-JbQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="137.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TbuttonSmartPlug" translatesAutoresizingMaskIntoConstraints="NO" id="YYA-xc-DVW">
+                                                    <rect key="frame" x="10" y="65" width="355" height="7.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YYA-xc-DVW" firstAttribute="top" secondItem="gNf-va-JbQ" secondAttribute="top" constant="65" id="B77-za-fsP"/>
+                                                <constraint firstItem="YYA-xc-DVW" firstAttribute="leading" secondItem="gNf-va-JbQ" secondAttribute="leading" constant="10" id="VVj-GA-m9y"/>
+                                                <constraint firstAttribute="trailing" secondItem="YYA-xc-DVW" secondAttribute="trailing" constant="10" id="b9b-4b-B3v"/>
+                                                <constraint firstAttribute="bottom" secondItem="YYA-xc-DVW" secondAttribute="bottom" constant="65" id="cGd-k0-eKh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.22571628378675032" green="0.22967927864161902" blue="0.24814559070203046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="TbuttonSmartPlugImage" destination="YYA-xc-DVW" id="1mE-yy-u6h"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ahI-b2-lAr" id="S5q-DQ-hN2"/>
+                                </connections>
+                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEh-4i-9C7">
                                 <rect key="frame" x="0.0" y="20" width="375" height="40"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -136,7 +155,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XrY-Vp-1ym" firstAttribute="bottom" secondItem="Zt4-lq-8t7" secondAttribute="bottom" id="72B-pV-qLq"/>
                             <constraint firstItem="XrY-Vp-1ym" firstAttribute="trailing" secondItem="9I0-dE-34O" secondAttribute="trailing" id="9r9-Bi-Uhe"/>
@@ -144,7 +163,7 @@
                             <constraint firstItem="9I0-dE-34O" firstAttribute="top" secondItem="XrY-Vp-1ym" secondAttribute="top" constant="40" id="JTU-8l-PWa"/>
                             <constraint firstItem="9I0-dE-34O" firstAttribute="top" secondItem="aEh-4i-9C7" secondAttribute="bottom" id="KKb-dW-i55"/>
                             <constraint firstItem="aEh-4i-9C7" firstAttribute="leading" secondItem="XrY-Vp-1ym" secondAttribute="leading" id="Q0H-NH-haV"/>
-                            <constraint firstItem="Zt4-lq-8t7" firstAttribute="top" secondItem="9I0-dE-34O" secondAttribute="bottom" id="ZUt-KE-PFL"/>
+                            <constraint firstItem="Zt4-lq-8t7" firstAttribute="top" secondItem="9I0-dE-34O" secondAttribute="bottom" constant="-29" id="ZUt-KE-PFL"/>
                             <constraint firstItem="XrY-Vp-1ym" firstAttribute="trailing" secondItem="EHb-Ub-U5w" secondAttribute="trailing" constant="311" id="biK-ty-KwB"/>
                             <constraint firstItem="Zt4-lq-8t7" firstAttribute="leading" secondItem="XrY-Vp-1ym" secondAttribute="leading" id="bx8-7b-bhv"/>
                             <constraint firstItem="EHb-Ub-U5w" firstAttribute="top" secondItem="XrY-Vp-1ym" secondAttribute="top" constant="10" id="iAf-QT-bP8"/>
@@ -162,11 +181,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5a-OC-22o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="-533"/>
+            <point key="canvasLocation" x="1888.8" y="-533.88305847076469"/>
         </scene>
     </scenes>
     <resources>
         <image name="GyroImage" width="354" height="492"/>
+        <image name="TbuttonSmartPlug" width="386" height="139"/>
         <image name="WelcomeScreen" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
