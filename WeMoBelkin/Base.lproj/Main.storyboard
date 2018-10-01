@@ -101,7 +101,7 @@
                                 <rect key="frame" x="0.0" y="180" width="375" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zIZ-D7-5X9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="zIZ-D7-5X9">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zIZ-D7-5X9" id="gNf-va-JbQ">
@@ -157,10 +157,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XrY-Vp-1ym"/>
                     </view>
+                    <connections>
+                        <outlet property="productTable" destination="Zt4-lq-8t7" id="5gf-p6-HTV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5a-OC-22o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661.5999999999999" y="97.601199400299862"/>
+            <point key="canvasLocation" x="1889" y="-533"/>
         </scene>
     </scenes>
     <resources>
@@ -168,6 +171,6 @@
         <image name="WelcomeScreen" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8kN-mH-msc"/>
+        <segue reference="40t-HX-fMB"/>
     </inferredMetricsTieBreakers>
 </document>

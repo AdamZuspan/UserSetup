@@ -8,14 +8,23 @@
 
 import UIKit
 
-class ProductTableViewController: UIViewController {
-
+class ProductTableViewController: UIViewController, UITableViewDataSourcePrefetching, UITableViewDelegate {
+    
+    @IBOutlet weak var productTable: UITableView!
+    weak open var prefetchDataSource: UITableViewDataSourcePrefetching?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        productTable.delegate = self
     }
     
-    
-    @IBAction func XButtonACT(_ sender: Any) {
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        print("PrefetchingForRowsAt \(indexPaths)")
     }
+    func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
+        print("cancelPrefetchingForRowsAt \(indexPaths)")
+    }
+    
+
     
 }
