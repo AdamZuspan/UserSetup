@@ -132,7 +132,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="XButtonACT:" destination="ahI-b2-lAr" eventType="touchUpInside" id="19d-45-bC4"/>
                                     <segue destination="5fP-8C-Q5S" kind="presentation" modalTransitionStyle="partialCurl" id="8kN-mH-msc"/>
                                 </connections>
                             </button>
@@ -171,6 +170,6 @@
         <image name="WelcomeScreen" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="40t-HX-fMB"/>
+        <segue reference="8kN-mH-msc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,11 +10,15 @@ import UIKit
 
 class ProductTableViewController: UIViewController, UITableViewDataSourcePrefetching, UITableViewDelegate {
     
+    
+    
     @IBOutlet weak var productTable: UITableView!
     weak open var prefetchDataSource: UITableViewDataSourcePrefetching?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         productTable.delegate = self
     }
     
@@ -24,6 +28,14 @@ class ProductTableViewController: UIViewController, UITableViewDataSourcePrefetc
     func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
         print("cancelPrefetchingForRowsAt \(indexPaths)")
     }
+    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
     
 
     
