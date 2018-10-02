@@ -30,8 +30,14 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Add selection to go to individual pageViewControllers for each PRODUCT
-        let smartPlug:SmartPlugFirstViewController = self.storyboard?.instantiateViewController(withIdentifier: "sbSmartPlugFirst") as! SmartPlugFirstViewController
-        self.present(smartPlug, animated: true, completion: nil)
+        switch indexPath.row {
+        case 0:
+            let smartPlug:SmartPlugFirstViewController = self.storyboard?.instantiateViewController(withIdentifier: "sbSmartPlugFirst") as! SmartPlugFirstViewController
+            self.present(smartPlug, animated: true, completion: nil)
+        default:
+            print("ERROR: Not a valid cell --> Should never hit this if so check tableData.pictureData.count ")
+        }
+        
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
