@@ -15,6 +15,10 @@
 		846323C72162C191008F0414 /* ProductTableDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323C62162C191008F0414 /* ProductTableDataViewModel.swift */; };
 		846323CA2162FCA8008F0414 /* SmartPlugSetupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323C92162FCA8008F0414 /* SmartPlugSetupPageViewController.swift */; };
 		846323CE21632868008F0414 /* SmartPlugFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323CD21632868008F0414 /* SmartPlugFirstViewController.swift */; };
+		846323D021640FAA008F0414 /* SmartPlugSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323CF21640FAA008F0414 /* SmartPlugSecondViewController.swift */; };
+		846323D221640FC0008F0414 /* SmartPlugThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323D121640FC0008F0414 /* SmartPlugThirdViewController.swift */; };
+		846323D421640FFB008F0414 /* SmartPlugFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323D321640FFB008F0414 /* SmartPlugFourthViewController.swift */; };
+		846323D621641021008F0414 /* SmartPlugFithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323D521641021008F0414 /* SmartPlugFithViewController.swift */; };
 		84BB73D4215C25D5009A2FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73D3215C25D5009A2FDB /* AppDelegate.swift */; };
 		84BB73D6215C25D5009A2FDB /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */; };
 		84BB73D9215C25D5009A2FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB73D7215C25D5009A2FDB /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		846323C62162C191008F0414 /* ProductTableDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableDataViewModel.swift; sourceTree = "<group>"; };
 		846323C92162FCA8008F0414 /* SmartPlugSetupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPlugSetupPageViewController.swift; sourceTree = "<group>"; };
 		846323CD21632868008F0414 /* SmartPlugFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPlugFirstViewController.swift; sourceTree = "<group>"; };
+		846323CF21640FAA008F0414 /* SmartPlugSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPlugSecondViewController.swift; sourceTree = "<group>"; };
+		846323D121640FC0008F0414 /* SmartPlugThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPlugThirdViewController.swift; sourceTree = "<group>"; };
+		846323D321640FFB008F0414 /* SmartPlugFourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPlugFourthViewController.swift; sourceTree = "<group>"; };
+		846323D521641021008F0414 /* SmartPlugFithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPlugFithViewController.swift; sourceTree = "<group>"; };
 		84BB73D0215C25D5009A2FDB /* WeMoBelkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeMoBelkin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB73D3215C25D5009A2FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +130,10 @@
 			children = (
 				846323C92162FCA8008F0414 /* SmartPlugSetupPageViewController.swift */,
 				846323CD21632868008F0414 /* SmartPlugFirstViewController.swift */,
+				846323CF21640FAA008F0414 /* SmartPlugSecondViewController.swift */,
+				846323D121640FC0008F0414 /* SmartPlugThirdViewController.swift */,
+				846323D321640FFB008F0414 /* SmartPlugFourthViewController.swift */,
+				846323D521641021008F0414 /* SmartPlugFithViewController.swift */,
 			);
 			path = SmartPlugPageViewControllers;
 			sourceTree = "<group>";
@@ -283,12 +295,16 @@
 			files = (
 				842CC0D521614806008141F9 /* SpinningLoaderViewModel.swift in Sources */,
 				846323C72162C191008F0414 /* ProductTableDataViewModel.swift in Sources */,
+				846323D221640FC0008F0414 /* SmartPlugThirdViewController.swift in Sources */,
+				846323D021640FAA008F0414 /* SmartPlugSecondViewController.swift in Sources */,
 				846323C52162BD47008F0414 /* ProductTableData.swift in Sources */,
+				846323D621641021008F0414 /* SmartPlugFithViewController.swift in Sources */,
 				84BB73D6215C25D5009A2FDB /* HomeScreenViewController.swift in Sources */,
 				84BB73D4215C25D5009A2FDB /* AppDelegate.swift in Sources */,
 				843623E0215C29DD003A0958 /* SecondHomeScreenViewController.swift in Sources */,
 				842CC0D721617B89008141F9 /* ProductTableViewController.swift in Sources */,
 				846323CE21632868008F0414 /* SmartPlugFirstViewController.swift in Sources */,
+				846323D421640FFB008F0414 /* SmartPlugFourthViewController.swift in Sources */,
 				846323C22162BBE4008F0414 /* ProductTableViewCell.swift in Sources */,
 				846323CA2162FCA8008F0414 /* SmartPlugSetupPageViewController.swift in Sources */,
 			);

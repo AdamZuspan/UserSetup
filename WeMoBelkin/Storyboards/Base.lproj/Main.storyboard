@@ -186,7 +186,7 @@
         <!--Smart Plug Setup Page View Controller-->
         <scene sceneID="QET-Mh-xvi">
             <objects>
-                <pageViewController storyboardIdentifier="smartPlugPageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="HMu-eg-Qye" customClass="SmartPlugSetupPageViewController" customModule="WeMoBelkin" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="smartPlugPageView" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="HMu-eg-Qye" customClass="SmartPlugSetupPageViewController" customModule="WeMoBelkin" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orO-gl-eAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2953" y="-582"/>
@@ -235,61 +235,117 @@
             </objects>
             <point key="canvasLocation" x="3708" y="-586"/>
         </scene>
-        <!--Smart Plug Setup Page View Controller-->
+        <!--Smart Plug Second View Controller-->
         <scene sceneID="uyR-XM-4C4">
             <objects>
-                <viewController storyboardIdentifier="sbSmartPlugSecond" id="WGu-3Z-uYb" customClass="SmartPlugSetupPageViewController" customModule="WeMoBelkin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbSmartPlugSecond" id="WGu-3Z-uYb" customClass="SmartPlugSecondViewController" customModule="WeMoBelkin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aAo-Ff-Mqz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hn9-3F-kRe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hn9-3F-kRe" firstAttribute="leading" secondItem="ver-5e-eXD" secondAttribute="leading" id="13R-EI-y3j"/>
+                            <constraint firstItem="Hn9-3F-kRe" firstAttribute="top" secondItem="ver-5e-eXD" secondAttribute="top" id="IKT-kc-qAO"/>
+                            <constraint firstItem="ver-5e-eXD" firstAttribute="bottom" secondItem="Hn9-3F-kRe" secondAttribute="bottom" id="NSo-eE-7hl"/>
+                            <constraint firstItem="ver-5e-eXD" firstAttribute="trailing" secondItem="Hn9-3F-kRe" secondAttribute="trailing" id="Vae-Ie-5i7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ver-5e-eXD"/>
                     </view>
+                    <connections>
+                        <outlet property="SmartPlugSecondImage" destination="Hn9-3F-kRe" id="Bim-FL-Sfh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZM-1p-2OK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4415" y="-591"/>
         </scene>
-        <!--View Controller-->
+        <!--Smart Plug Third View Controller-->
         <scene sceneID="rmd-WQ-Zar">
             <objects>
-                <viewController storyboardIdentifier="sbSmartPlugThird" id="fC3-Zs-WAM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbSmartPlugThird" id="fC3-Zs-WAM" customClass="SmartPlugThirdViewController" customModule="WeMoBelkin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qKY-wX-w4N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Nj-dD-3K2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rcv-ST-iVw" firstAttribute="trailing" secondItem="5Nj-dD-3K2" secondAttribute="trailing" id="AHM-NL-z0U"/>
+                            <constraint firstItem="5Nj-dD-3K2" firstAttribute="leading" secondItem="rcv-ST-iVw" secondAttribute="leading" id="LV4-5a-KIA"/>
+                            <constraint firstItem="rcv-ST-iVw" firstAttribute="bottom" secondItem="5Nj-dD-3K2" secondAttribute="bottom" id="ZNZ-Em-HMz"/>
+                            <constraint firstItem="5Nj-dD-3K2" firstAttribute="top" secondItem="rcv-ST-iVw" secondAttribute="top" id="oXh-kQ-55J"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rcv-ST-iVw"/>
                     </view>
+                    <connections>
+                        <outlet property="SmartPlugThirdImage" destination="5Nj-dD-3K2" id="Hds-yV-glc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fd-ib-S0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5126" y="-595"/>
         </scene>
-        <!--View Controller-->
+        <!--Smart Plug Fourth View Controller-->
         <scene sceneID="sdp-yh-KzB">
             <objects>
-                <viewController storyboardIdentifier="sbSmartPlugFourth" id="vN1-bK-V6e" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbSmartPlugFourth" id="vN1-bK-V6e" customClass="SmartPlugFourthViewController" customModule="WeMoBelkin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TRW-x8-5aS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9zn-Mh-kwm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9zn-Mh-kwm" firstAttribute="top" secondItem="EtZ-dK-YtY" secondAttribute="top" id="4fT-77-dJY"/>
+                            <constraint firstItem="9zn-Mh-kwm" firstAttribute="leading" secondItem="EtZ-dK-YtY" secondAttribute="leading" id="Da2-C6-z3e"/>
+                            <constraint firstItem="EtZ-dK-YtY" firstAttribute="trailing" secondItem="9zn-Mh-kwm" secondAttribute="trailing" id="MdH-v2-eh5"/>
+                            <constraint firstItem="EtZ-dK-YtY" firstAttribute="bottom" secondItem="9zn-Mh-kwm" secondAttribute="bottom" id="PN8-Bg-yCX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EtZ-dK-YtY"/>
                     </view>
+                    <connections>
+                        <outlet property="SmartPlugFourthImage" destination="9zn-Mh-kwm" id="bDq-DY-3Jq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJr-Aa-R5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5788" y="-599"/>
         </scene>
-        <!--View Controller-->
+        <!--Smart Plug Fith View Controller-->
         <scene sceneID="WdJ-EY-NKy">
             <objects>
-                <viewController storyboardIdentifier="sbSmartPlugFith" id="OCB-jC-ctw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbSmartPlugFith" id="OCB-jC-ctw" customClass="SmartPlugFithViewController" customModule="WeMoBelkin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vgv-et-u3v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jPI-D8-RsG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jPI-D8-RsG" firstAttribute="leading" secondItem="yE6-ms-Y7d" secondAttribute="leading" id="FHC-q1-NoE"/>
+                            <constraint firstItem="jPI-D8-RsG" firstAttribute="top" secondItem="yE6-ms-Y7d" secondAttribute="top" id="OOE-Sy-kGh"/>
+                            <constraint firstItem="yE6-ms-Y7d" firstAttribute="bottom" secondItem="jPI-D8-RsG" secondAttribute="bottom" id="OY7-Sq-Edr"/>
+                            <constraint firstItem="yE6-ms-Y7d" firstAttribute="trailing" secondItem="jPI-D8-RsG" secondAttribute="trailing" id="WtE-QB-6cX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yE6-ms-Y7d"/>
                     </view>
+                    <connections>
+                        <outlet property="SmartPlugFithImage" destination="jPI-D8-RsG" id="Aec-Pc-Y1o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRs-m1-2gC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

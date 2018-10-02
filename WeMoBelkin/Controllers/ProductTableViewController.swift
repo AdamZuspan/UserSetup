@@ -32,10 +32,10 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         //Add selection to go to individual pageViewControllers for each PRODUCT
         switch indexPath.row {
         case 0:
-            let smartPlug:SmartPlugFirstViewController = self.storyboard?.instantiateViewController(withIdentifier: "sbSmartPlugFirst") as! SmartPlugFirstViewController
+            let smartPlug:SmartPlugSetupPageViewController = self.storyboard?.instantiateViewController(withIdentifier: "smartPlugPageView") as! SmartPlugSetupPageViewController
             self.present(smartPlug, animated: true, completion: nil)
         default:
-            print("ERROR: Not a valid cell --> Should never hit this if so check tableData.pictureData.count ")
+            print("ERROR: Not a valid cell --> Should never hit this ---> if so check tableData.pictureData.count ")
         }
         
     }

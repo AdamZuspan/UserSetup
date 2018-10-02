@@ -25,7 +25,6 @@ class ProductTableData {
         pictureArray.append(UIImage(named: "TbuttonHumidifier")!)
         pictureArray.append(UIImage(named: "TbuttonCoffee")!)
         pictureArray.append(UIImage(named: "TbuttonAirPurifier")!)
-        //MORE
         return pictureArray
     }
     

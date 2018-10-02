@@ -16,8 +16,6 @@ class SmartPlugFirstViewController: UIViewController {
         super.viewDidLoad()
         
         SmartPlugImageFirst.image = UIImage(named: "SmartPlugPVfirst")
-
-        // Do any additional setup after loading the view.
     }
     
 
