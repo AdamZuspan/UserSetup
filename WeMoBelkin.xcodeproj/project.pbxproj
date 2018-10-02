@@ -13,6 +13,8 @@
 		846323C22162BBE4008F0414 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323C12162BBE4008F0414 /* ProductTableViewCell.swift */; };
 		846323C52162BD47008F0414 /* ProductTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323C42162BD47008F0414 /* ProductTableData.swift */; };
 		846323C72162C191008F0414 /* ProductTableDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323C62162C191008F0414 /* ProductTableDataViewModel.swift */; };
+		846323CA2162FCA8008F0414 /* SmartPlugSetupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323C92162FCA8008F0414 /* SmartPlugSetupPageViewController.swift */; };
+		846323CE21632868008F0414 /* SmartPlugFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846323CD21632868008F0414 /* SmartPlugFirstViewController.swift */; };
 		84BB73D4215C25D5009A2FDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73D3215C25D5009A2FDB /* AppDelegate.swift */; };
 		84BB73D6215C25D5009A2FDB /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */; };
 		84BB73D9215C25D5009A2FDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB73D7215C25D5009A2FDB /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		846323C12162BBE4008F0414 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		846323C42162BD47008F0414 /* ProductTableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableData.swift; sourceTree = "<group>"; };
 		846323C62162C191008F0414 /* ProductTableDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableDataViewModel.swift; sourceTree = "<group>"; };
+		846323C92162FCA8008F0414 /* SmartPlugSetupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPlugSetupPageViewController.swift; sourceTree = "<group>"; };
+		846323CD21632868008F0414 /* SmartPlugFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartPlugFirstViewController.swift; sourceTree = "<group>"; };
 		84BB73D0215C25D5009A2FDB /* WeMoBelkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeMoBelkin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB73D3215C25D5009A2FDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 		843623E1215C29E7003A0958 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				846323CB21631AF8008F0414 /* PageViewControllers */,
 				84BB73D5215C25D5009A2FDB /* HomeScreenViewController.swift */,
 				843623DF215C29DD003A0958 /* SecondHomeScreenViewController.swift */,
 				842CC0D621617B89008141F9 /* ProductTableViewController.swift */,
@@ -95,6 +100,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		846323C82162FB38008F0414 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84BB73D7215C25D5009A2FDB /* Main.storyboard */,
+				84BB73DC215C25D6009A2FDB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		846323CB21631AF8008F0414 /* PageViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				846323CC21631B48008F0414 /* SmartPlugPageViewControllers */,
+			);
+			path = PageViewControllers;
+			sourceTree = "<group>";
+		};
+		846323CC21631B48008F0414 /* SmartPlugPageViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				846323C92162FCA8008F0414 /* SmartPlugSetupPageViewController.swift */,
+				846323CD21632868008F0414 /* SmartPlugFirstViewController.swift */,
+			);
+			path = SmartPlugPageViewControllers;
+			sourceTree = "<group>";
+		};
 		84BB73C7215C25D5009A2FDB = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +147,13 @@
 		84BB73D2215C25D5009A2FDB /* WeMoBelkin */ = {
 			isa = PBXGroup;
 			children = (
+				846323C82162FB38008F0414 /* Storyboards */,
 				846323C32162BD25008F0414 /* Model */,
 				846323BE2162BBB1008F0414 /* Views */,
 				842CC0D3216147E0008141F9 /* ViewModels */,
 				843623E1215C29E7003A0958 /* Controllers */,
 				84BB73D3215C25D5009A2FDB /* AppDelegate.swift */,
-				84BB73D7215C25D5009A2FDB /* Main.storyboard */,
 				84BB73DA215C25D6009A2FDB /* Assets.xcassets */,
-				84BB73DC215C25D6009A2FDB /* LaunchScreen.storyboard */,
 				84BB73DF215C25D6009A2FDB /* Info.plist */,
 			);
 			path = WeMoBelkin;
@@ -258,7 +288,9 @@
 				84BB73D4215C25D5009A2FDB /* AppDelegate.swift in Sources */,
 				843623E0215C29DD003A0958 /* SecondHomeScreenViewController.swift in Sources */,
 				842CC0D721617B89008141F9 /* ProductTableViewController.swift in Sources */,
+				846323CE21632868008F0414 /* SmartPlugFirstViewController.swift in Sources */,
 				846323C22162BBE4008F0414 /* ProductTableViewCell.swift in Sources */,
+				846323CA2162FCA8008F0414 /* SmartPlugSetupPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

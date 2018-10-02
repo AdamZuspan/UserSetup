@@ -22,11 +22,16 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         
         productTable.delegate = self
         self.productTable.separatorStyle = .none
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData.pictureData.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Add selection to go to individual pageViewControllers for each PRODUCT
+        let smartPlug:SmartPlugFirstViewController = self.storyboard?.instantiateViewController(withIdentifier: "sbSmartPlugFirst") as! SmartPlugFirstViewController
+        self.present(smartPlug, animated: true, completion: nil)
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,11 +63,6 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         default:
             print("Error: Add More to ProductDataModel ---> pictureData(){}")
         }
-       
-        
         return cell
     }
-    
-
-    
 }
