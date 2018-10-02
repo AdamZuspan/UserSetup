@@ -25,16 +25,40 @@ class ProductTableViewController: UIViewController, UITableViewDelegate, UITable
         
     }
     
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return tableData.pictureData.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProductTableViewCell
-        cell.TbuttonSmartPlugImage.image = tableData.pictureData[1]
+        switch indexPath.row {
+        case 0:
+             cell.TbuttonSmartPlugImage.image = tableData.pictureData[0]
+        case 1:
+             cell.TbuttonSmartPlugImage.image = tableData.pictureData[1]
+        case 2:
+             cell.TbuttonSmartPlugImage.image = tableData.pictureData[2]
+        case 3:
+            cell.TbuttonSmartPlugImage.image = tableData.pictureData[3]
+        case 4:
+            cell.TbuttonSmartPlugImage.image = tableData.pictureData[4]
+        case 5:
+            cell.TbuttonSmartPlugImage.image = tableData.pictureData[5]
+        case 6:
+            cell.TbuttonSmartPlugImage.image = tableData.pictureData[6]
+        case 7:
+            cell.TbuttonSmartPlugImage.image = tableData.pictureData[7]
+        case 8:
+            cell.TbuttonSmartPlugImage.image = tableData.pictureData[8]
+        case 9:
+            cell.TbuttonSmartPlugImage.image = tableData.pictureData[9]
+        case 10:
+            cell.TbuttonSmartPlugImage.image = tableData.pictureData[10]
+        default:
+            print("Error: Add More to ProductDataModel ---> pictureData(){}")
+        }
+       
         
         return cell
     }
