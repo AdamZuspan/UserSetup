@@ -246,13 +246,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hn9-3F-kRe">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l9-zk-Cs3">
+                                <rect key="frame" x="311" y="574" width="64" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ahI-b2-lAr" kind="presentation" modalTransitionStyle="partialCurl" id="fEA-3h-qxS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Hn9-3F-kRe" firstAttribute="leading" secondItem="ver-5e-eXD" secondAttribute="leading" id="13R-EI-y3j"/>
+                            <constraint firstItem="ver-5e-eXD" firstAttribute="trailing" secondItem="3l9-zk-Cs3" secondAttribute="trailing" id="4cn-ag-Vpp"/>
+                            <constraint firstItem="ver-5e-eXD" firstAttribute="bottom" secondItem="3l9-zk-Cs3" secondAttribute="bottom" constant="29" id="HG8-id-WID"/>
                             <constraint firstItem="Hn9-3F-kRe" firstAttribute="top" secondItem="ver-5e-eXD" secondAttribute="top" id="IKT-kc-qAO"/>
                             <constraint firstItem="ver-5e-eXD" firstAttribute="bottom" secondItem="Hn9-3F-kRe" secondAttribute="bottom" id="NSo-eE-7hl"/>
                             <constraint firstItem="ver-5e-eXD" firstAttribute="trailing" secondItem="Hn9-3F-kRe" secondAttribute="trailing" id="Vae-Ie-5i7"/>
+                            <constraint firstItem="3l9-zk-Cs3" firstAttribute="leading" secondItem="ver-5e-eXD" secondAttribute="leading" constant="311" id="Wdq-vp-fYa"/>
+                            <constraint firstItem="3l9-zk-Cs3" firstAttribute="top" secondItem="ver-5e-eXD" secondAttribute="top" constant="554" id="fkR-Mg-Odc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ver-5e-eXD"/>
                     </view>
@@ -262,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PZM-1p-2OK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4415" y="-591"/>
+            <point key="canvasLocation" x="4409" y="-582"/>
         </scene>
         <!--Smart Plug Third View Controller-->
         <scene sceneID="rmd-WQ-Zar">
@@ -275,12 +289,26 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Nj-dD-3K2">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WT-Ho-cO7">
+                                <rect key="frame" x="311" y="574" width="64" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ahI-b2-lAr" kind="presentation" modalTransitionStyle="partialCurl" id="yYp-MT-EDV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="rcv-ST-iVw" firstAttribute="bottom" secondItem="2WT-Ho-cO7" secondAttribute="bottom" constant="29" id="4ov-6P-Cif"/>
                             <constraint firstItem="rcv-ST-iVw" firstAttribute="trailing" secondItem="5Nj-dD-3K2" secondAttribute="trailing" id="AHM-NL-z0U"/>
+                            <constraint firstItem="rcv-ST-iVw" firstAttribute="trailing" secondItem="2WT-Ho-cO7" secondAttribute="trailing" id="G1X-ds-y7A"/>
                             <constraint firstItem="5Nj-dD-3K2" firstAttribute="leading" secondItem="rcv-ST-iVw" secondAttribute="leading" id="LV4-5a-KIA"/>
                             <constraint firstItem="rcv-ST-iVw" firstAttribute="bottom" secondItem="5Nj-dD-3K2" secondAttribute="bottom" id="ZNZ-Em-HMz"/>
+                            <constraint firstItem="2WT-Ho-cO7" firstAttribute="top" secondItem="rcv-ST-iVw" secondAttribute="top" constant="554" id="aOK-HF-MST"/>
+                            <constraint firstItem="2WT-Ho-cO7" firstAttribute="leading" secondItem="rcv-ST-iVw" secondAttribute="leading" constant="311" id="gZ2-Ei-uc2"/>
                             <constraint firstItem="5Nj-dD-3K2" firstAttribute="top" secondItem="rcv-ST-iVw" secondAttribute="top" id="oXh-kQ-55J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rcv-ST-iVw"/>
@@ -291,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fd-ib-S0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5126" y="-595"/>
+            <point key="canvasLocation" x="5100" y="-582"/>
         </scene>
         <!--Smart Plug Fourth View Controller-->
         <scene sceneID="sdp-yh-KzB">
@@ -304,6 +332,16 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9zn-Mh-kwm">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMj-dw-lAC">
+                                <rect key="frame" x="311" y="574" width="64" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ahI-b2-lAr" kind="presentation" modalTransitionStyle="partialCurl" id="RcG-MF-mHl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -311,6 +349,10 @@
                             <constraint firstItem="9zn-Mh-kwm" firstAttribute="leading" secondItem="EtZ-dK-YtY" secondAttribute="leading" id="Da2-C6-z3e"/>
                             <constraint firstItem="EtZ-dK-YtY" firstAttribute="trailing" secondItem="9zn-Mh-kwm" secondAttribute="trailing" id="MdH-v2-eh5"/>
                             <constraint firstItem="EtZ-dK-YtY" firstAttribute="bottom" secondItem="9zn-Mh-kwm" secondAttribute="bottom" id="PN8-Bg-yCX"/>
+                            <constraint firstItem="EtZ-dK-YtY" firstAttribute="trailing" secondItem="JMj-dw-lAC" secondAttribute="trailing" id="SPS-FG-jJI"/>
+                            <constraint firstItem="JMj-dw-lAC" firstAttribute="leading" secondItem="EtZ-dK-YtY" secondAttribute="leading" constant="311" id="n8L-C5-dUq"/>
+                            <constraint firstItem="EtZ-dK-YtY" firstAttribute="bottom" secondItem="JMj-dw-lAC" secondAttribute="bottom" constant="29" id="p43-y6-fiU"/>
+                            <constraint firstItem="JMj-dw-lAC" firstAttribute="top" secondItem="EtZ-dK-YtY" secondAttribute="top" constant="554" id="vVP-5y-lxi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EtZ-dK-YtY"/>
                     </view>
@@ -320,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJr-Aa-R5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5788" y="-599"/>
+            <point key="canvasLocation" x="5777" y="-582"/>
         </scene>
         <!--Smart Plug Fith View Controller-->
         <scene sceneID="WdJ-EY-NKy">
@@ -333,13 +375,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jPI-D8-RsG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5p-nO-wiW">
+                                <rect key="frame" x="311" y="574" width="64" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ahI-b2-lAr" kind="presentation" modalTransitionStyle="partialCurl" id="NQp-W1-Fg7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="A5p-nO-wiW" firstAttribute="leading" secondItem="yE6-ms-Y7d" secondAttribute="leading" constant="311" id="7cS-Ec-NCW"/>
                             <constraint firstItem="jPI-D8-RsG" firstAttribute="leading" secondItem="yE6-ms-Y7d" secondAttribute="leading" id="FHC-q1-NoE"/>
                             <constraint firstItem="jPI-D8-RsG" firstAttribute="top" secondItem="yE6-ms-Y7d" secondAttribute="top" id="OOE-Sy-kGh"/>
                             <constraint firstItem="yE6-ms-Y7d" firstAttribute="bottom" secondItem="jPI-D8-RsG" secondAttribute="bottom" id="OY7-Sq-Edr"/>
                             <constraint firstItem="yE6-ms-Y7d" firstAttribute="trailing" secondItem="jPI-D8-RsG" secondAttribute="trailing" id="WtE-QB-6cX"/>
+                            <constraint firstItem="A5p-nO-wiW" firstAttribute="top" secondItem="yE6-ms-Y7d" secondAttribute="top" constant="554" id="jpe-jP-wfP"/>
+                            <constraint firstItem="yE6-ms-Y7d" firstAttribute="bottom" secondItem="A5p-nO-wiW" secondAttribute="bottom" constant="29" id="nqd-4X-BHR"/>
+                            <constraint firstItem="yE6-ms-Y7d" firstAttribute="trailing" secondItem="A5p-nO-wiW" secondAttribute="trailing" id="u5z-3y-vdz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yE6-ms-Y7d"/>
                     </view>
@@ -349,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRs-m1-2gC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6476" y="-602"/>
+            <point key="canvasLocation" x="6450" y="-582"/>
         </scene>
     </scenes>
     <resources>
@@ -358,6 +414,6 @@
         <image name="WelcomeScreen" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kbJ-vT-ue3"/>
+        <segue reference="NQp-W1-Fg7"/>
     </inferredMetricsTieBreakers>
 </document>
