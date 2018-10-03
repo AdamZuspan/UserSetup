@@ -17,13 +17,29 @@ class SmartPlugSetupPageViewController: UIPageViewController, UIPageViewControll
                 self.newVC(viewController: "sbSmartPlugFourth"),
                 self.newVC(viewController: "sbSmartPlugFith")]
     }()
+    var pageControl = UIPageControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
         if let firstViewController = orderedViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
+        self.delegate = self
+        configurePageControl()
 
+    }
+    
+    
+    
+    func configurePageControl(){
+        pageControl = UIPageControl(frame: CGRect(x: 0, y: UIScreen.main.bounds.maxY - 50, width: UIScreen.main.bounds.width, height: 50))
+        pageControl.numberOfPages = orderedViewControllers.count
+        pageControl.currentPage = 0
+        pageControl.tintColor = UIColor.black
+        pageControl.pageIndicatorTintColor = UIColor.white
+        pageControl.currentPageIndicatorTintColor = UIColor.black
+        self.view.insertSubview(pageControl, at: 1)
     }
     
     func newVC(viewController: String) -> UIViewController {
@@ -62,6 +78,11 @@ class SmartPlugSetupPageViewController: UIPageViewController, UIPageViewControll
             return nil
         }
         return orderedViewControllers[nextIndex]
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        let pageContentViewController = pageViewController.viewControllers![0]
+        self.pageControl.currentPage = orderedViewControllers.index(of: pageContentViewController)!
     }
     
     
