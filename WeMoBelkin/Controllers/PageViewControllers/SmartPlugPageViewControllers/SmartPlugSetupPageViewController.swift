@@ -30,8 +30,6 @@ class SmartPlugSetupPageViewController: UIPageViewController, UIPageViewControll
 
     }
     
-    
-    
     func configurePageControl(){
         pageControl = UIPageControl(frame: CGRect(x: 0, y: UIScreen.main.bounds.maxY - 50, width: UIScreen.main.bounds.width, height: 50))
         pageControl.numberOfPages = orderedViewControllers.count

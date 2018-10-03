@@ -10,7 +10,7 @@ import UIKit
 import SVProgressHUD
 
 class HomeScreenViewController: UIViewController {
-    var delayTime = 2.0
+    var delayTime = 5.0
     var mySpinningLoader = SpinningLoaderViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
